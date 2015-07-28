@@ -15,6 +15,7 @@
 		3FF418071B6826EB00CFDA82 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FF418061B6826EB00CFDA82 /* Images.xcassets */; };
 		3FF4180A1B6826EB00CFDA82 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FF418081B6826EB00CFDA82 /* LaunchScreen.xib */; };
 		3FF418161B6826EB00CFDA82 /* InClass10Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FF418151B6826EB00CFDA82 /* InClass10Tests.m */; };
+		3FF418211B682BB100CFDA82 /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FF418201B682BB100CFDA82 /* PhotoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,8 @@
 		3FF4180F1B6826EB00CFDA82 /* InClass10Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InClass10Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FF418141B6826EB00CFDA82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FF418151B6826EB00CFDA82 /* InClass10Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InClass10Tests.m; sourceTree = "<group>"; };
+		3FF4181F1B682BB100CFDA82 /* PhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
+		3FF418201B682BB100CFDA82 /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,10 +90,12 @@
 				3FF417FB1B6826EB00CFDA82 /* AppDelegate.m */,
 				3FF418001B6826EB00CFDA82 /* ViewController.h */,
 				3FF418011B6826EB00CFDA82 /* ViewController.m */,
-				3FF418031B6826EB00CFDA82 /* Main.storyboard */,
+				3FF4181F1B682BB100CFDA82 /* PhotoViewController.h */,
+				3FF418201B682BB100CFDA82 /* PhotoViewController.m */,
 				3FF418061B6826EB00CFDA82 /* Images.xcassets */,
 				3FF418081B6826EB00CFDA82 /* LaunchScreen.xib */,
 				3FF417FD1B6826EB00CFDA82 /* InClass10.xcdatamodeld */,
+				3FF418031B6826EB00CFDA82 /* Main.storyboard */,
 				3FF417F61B6826EB00CFDA82 /* Supporting Files */,
 			);
 			path = InClass10;
@@ -226,6 +231,7 @@
 				3FF417F91B6826EB00CFDA82 /* main.m in Sources */,
 				3FF418021B6826EB00CFDA82 /* ViewController.m in Sources */,
 				3FF417FF1B6826EB00CFDA82 /* InClass10.xcdatamodeld in Sources */,
+				3FF418211B682BB100CFDA82 /* PhotoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
