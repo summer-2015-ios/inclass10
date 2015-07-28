@@ -25,6 +25,26 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)deleteClicked:(id)sender {
+    UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Delete Photo"
+                                                                   message:@"Do you really want to delete this photo from this app?"
+                                                            preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction* okAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                          handler:^(UIAlertAction * action) {
+                                                              NSError* error;
+                                                              [[NSFileManager defaultManager] removeItemAtPath:self.photoPath error:&error];
+                                                              if(error){
+                                                                  NSLog(@"Error deleting photo : %@", error);
+                                                                  return;
+                                                              }
+                                                              [self.navigationController popViewControllerAnimated:YES];
+                                                          }];
+    UIAlertAction* cancelAction = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleDefault
+                                                     handler:^(UIAlertAction * action) {}];
+
+    [alert addAction:okAction];
+     [alert addAction:cancelAction];
+    [self presentViewController:alert animated:YES completion:nil];
 }
 -(UIImage*) imageFromPath:(NSString*)path{
     NSData *pngData = [NSData dataWithContentsOfFile: path];
