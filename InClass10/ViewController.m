@@ -18,6 +18,10 @@
 
 @implementation ViewController
 -(void)viewDidAppear:(BOOL)animated{
+    [self getImageURLs];
+}
+- (void)viewDidLoad {
+    [super viewDidLoad];
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *documentsDirectory = [paths objectAtIndex:0]; // Get documents folder
     self.dataPath = [documentsDirectory stringByAppendingPathComponent:@"/Photos"];
@@ -32,15 +36,7 @@
         }else{
             NSLog(@"Directory created");
         }
-    }else{
-        [self getImageURLs];
-        NSLog(@"Photos directory exists");
     }
-
-}
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)didReceiveMemoryWarning {

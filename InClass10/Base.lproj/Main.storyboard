@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="white" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="XEh-N9-VOQ">
-                                <rect key="frame" x="0.0" y="7" width="600" height="600"/>
+                                <rect key="frame" x="6" y="7" width="588" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="KCO-BH-bK5">
                                     <size key="itemSize" width="50" height="50"/>
@@ -60,9 +60,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="XEh-N9-VOQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="0q8-Tk-6XY"/>
+                            <constraint firstItem="XEh-N9-VOQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-10" id="0q8-Tk-6XY"/>
                             <constraint firstItem="XEh-N9-VOQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="7" id="2dR-mJ-7aR"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="XEh-N9-VOQ" secondAttribute="trailing" constant="-16" id="MTw-6A-enw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XEh-N9-VOQ" secondAttribute="trailing" constant="-10" id="MTw-6A-enw"/>
                             <constraint firstAttribute="bottomMargin" secondItem="XEh-N9-VOQ" secondAttribute="bottom" constant="-7" id="i4y-G9-Qtd"/>
                         </constraints>
                     </view>
@@ -93,17 +93,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8WU-T7-8Kw">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8WU-T7-8Kw">
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="7Cn-Ei-d4B" firstAttribute="top" secondItem="8WU-T7-8Kw" secondAttribute="bottom" id="IIG-59-cVp"/>
                             <constraint firstAttribute="bottomMargin" secondItem="8WU-T7-8Kw" secondAttribute="bottom" id="L6c-yE-wmH"/>
                             <constraint firstItem="8WU-T7-8Kw" firstAttribute="leading" secondItem="WYJ-mC-eWW" secondAttribute="leadingMargin" constant="-16" id="Nb5-ah-eHK"/>
                             <constraint firstItem="8WU-T7-8Kw" firstAttribute="top" secondItem="jsG-dn-7LH" secondAttribute="bottom" id="Ymw-B8-fyq"/>
                             <constraint firstAttribute="trailingMargin" secondItem="8WU-T7-8Kw" secondAttribute="trailing" constant="-16" id="g8c-zg-bYa"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="L6c-yE-wmH"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Photo" id="hTZ-Vb-l3R">
                         <barButtonItem key="rightBarButtonItem" systemItem="trash" id="UQK-S6-Uhj">
